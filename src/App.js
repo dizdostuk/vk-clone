@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Route, Switch, Redirect } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Feed from "./components/main_page/feed";
+import NotFound from "./components/notFound";
 import './App.css';
-import "normalize.css/normalize.css";
-import "font-awesome/css/font-awesome.css";
+
 
 class App extends Component {
   render() {
@@ -13,6 +13,8 @@ class App extends Component {
         <Navbar />
         <Switch>
           <Route to="/" component={Feed} />
+          <Route to="/notFound" component={NotFound} />
+          <Redirect to="/notFound" />
         </Switch>
       </React.Fragment>
     );

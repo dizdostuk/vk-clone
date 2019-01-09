@@ -4,25 +4,26 @@
   background-color: #4a76a8;
   position: relative;
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: 100%;
   align-items: center;
   justify-content: center;
 }
 
-.nav-layout {
-  width: 960px;
-  height: 42px;
+div.nav-layout {
+  width: 960px !important;
+  height: 42px !important;
 }
 
 .grid {
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 165px 230px 107px 135px;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .item4 {
   justify-self: end;
+  cursor: pointer;
 }
 
 .logo {
@@ -58,4 +59,64 @@
   color: #000;
 }
 
+.grid-notify-music {
+  display: grid;
+  grid-template-columns: repeat(2, 46px);
+  text-align: center;
+  align-items: center;
+}
 
+.nav-profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 10px;
+  align-items: center;
+}
+
+.nav-profile-name {
+  font-weight: 700;
+  font-size: 12.5px;
+  color: #fff;
+  position: relative;
+  right: 10px;
+}
+
+.nav-profile-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+}
+
+.nav-profile-arrow {
+  margin-left: 5px;
+}
+.arrow-opacity {
+  color: #fff;
+  font-size: 13px;
+  opacity: 0.45;
+}
+
+.nav-profile-menu {
+  position: absolute;
+  top: 50px;
+  right: 222px;
+  width: 160px;
+  border: 1px solid #c5d0db;
+  padding: 4px 0;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+.nav-profile-menu_links {
+  font-size: 12.5px;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  color: #2a5885;
+}
+.nav-profile-sep {
+  margin: 4px 13px;
+  border-top: 1px solid #dbe4ec;
+}
