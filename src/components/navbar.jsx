@@ -38,9 +38,32 @@ const Navbar = () => {
                 </div>
                 <div className="nav-notify-events">
                   <div className="nav-notify_event">
-                    <img src="" alt="" className="nav-notify_event_image"/>
-                    <div className="nav-notify_event_description"></div>
-                    <div className="nav-notify_event_submenu"></div>
+                    <img
+                      src="https://pp.userapi.com/c849236/v849236678/d667e/aCR7blDaemU.jpg?ava=1"
+                      alt=""
+                      className="nav-notify_event_image"
+                    />
+                    <div className="nav-notify_event_description">
+                      <div className="nav-notify_event_description_header">
+                        <b>
+                          <Link to="">Сабина Кудрявцева</Link>
+                        </b>
+                        " оценила Ваш комментарий "
+                        <Link to="">Ребят, возможно ли установить gulp глобально?</Link>
+                        " к записи "
+                        <Link to="">Краткое руководство по Javascript. В данном...</Link>
+                      </div>
+                      <div className="nav-notify_event_description_footer">
+                        <span className="notify-date">вчера в 11:09</span>
+                      </div>
+                    </div>
+                    <div className="nav-notify_event_submenu">
+                      <div className="nav-notify_event_submenu_icon"/>
+                      <div className="nav-notify_event_submenu_actions">
+                        <Link to="">Скрыть</Link>
+                        <Link to="">Показывать реже</Link>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
