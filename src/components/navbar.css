@@ -59,13 +59,66 @@ div.nav-layout {
   color: #000;
 }
 
+/* Styles for navigation notify */
 .grid-notify-music {
   display: grid;
   grid-template-columns: repeat(2, 46px);
   text-align: center;
   align-items: center;
 }
+.nav-notification-wrap {
+  width: 430px;
+  height: 402px;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #c5d0db;
+  border-radius: 0 0 4px 4px;
+  margin-top: 12px;
+  margin-left: 0;
+  box-shadow: 0 20px 40px 0 rgba(0,0,0,.3);
+}
+.nav-notification-wrap::before {
+  border-width: 6px;
+  margin: 0 -6px;
+  border-bottom-color: #fafbfc;
+  position: absolute;
+  pointer-events: none;
+  border: solid transparent;
+  content: '\f0d8';
+  height: 0;
+  width: 0;
+  bottom: 100%;
+  left: 23px;
+}
+.nav-notify-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  padding: 11px 14px;
+  color: #000;
+  font-size: 13px;
+  font-weight: 400;
+  border-bottom: 1px solid #e7e8ec;
+}
+.nav-notify-header_label {
+  height: 13px;
+  justify-self: start;
+}
+span.nav-notify-header_label_urpage {
+  font-weight: 500;
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.nav-notify-header_link {
+  font-weight: 400;
+  justify-self: end;
+  text-decoration: none;
+}
 
+
+/* Styles for navigation profile */
 .nav-profile {
   display: grid;
   grid-template-columns: 1fr 1fr 10px;
@@ -96,9 +149,10 @@ div.nav-layout {
 }
 
 .nav-profile-menu {
+  visibility: hidden;
   position: absolute;
-  top: 50px;
-  right: 222px;
+  top: 42px;
+  right: 120px;
   width: 160px;
   border: 1px solid #c5d0db;
   padding: 4px 0;
