@@ -25,7 +25,7 @@ const Navbar = () => {
                 <i className="fa fa-bell" />
               </div>
               <div className="nav-notification-wrap">
-                <i className="fa fa-caret-up"></i>
+                <i className="fa fa-caret-up" />
                 <div className="nav-notify-header">
                   <div className="nav-notify-header_label">
                     <span className="nav-notify-header_label_urpage">
@@ -122,16 +122,17 @@ const Navbar = () => {
                         </b>
                       </div>
                       <div className="nav-notify_event_description_text">
-                        <Link to="">Ulan</Link>
-                        , нет. Год здесь подразумевается как один оборот вокруг
-                        солнца у Плутона 247 лет.
+                        <Link to="">Ulan</Link>, нет. Год здесь подразумевается
+                        как один оборот вокруг солнца у Плутона 247 лет.
                       </div>
                       <div className="nav-notify_event_description_footer">
                         <Link to="">
                           <span className="notify-date">вчера в 11:09</span>
                         </Link>
                         " в ответ на Ваш комментарий "
-                        <Link to="">Получается за год пробытия в плутоне(365 дней),..</Link>
+                        <Link to="">
+                          Получается за год пробытия в плутоне(365 дней),..
+                        </Link>
                       </div>
                       <div className="nav-notify_event_description_buttons" />
                     </div>
@@ -150,6 +151,52 @@ const Navbar = () => {
             <div className="music">
               <div className="nav-notify_icon">
                 <i className="fa fa-music" />
+              </div>
+              <div className="nav-music-wrap">
+                <div className="nav-music-current-player">
+                  <button>
+                    <i className="fa fa-play" />
+                  </button>
+                  <button>
+                    <i className="fa fa-fast-backward prev-next" />
+                  </button>
+                  <button>
+                    <i className="fa fa-fast-forward prev-next" />
+                  </button>
+                  <div
+                    className="nav-music-current-player_music_cover"
+                    style={{backgroundImage: "url(https://pp.userapi.com/c639122/v639122564/611b3/yPI44uKBD-k.jpg)", backgroundSize: "cover"}}
+                  />
+                  <div className="nav-music-current-player_track_wrap">
+                  
+                    <div className="nav-music-current-player_track">
+
+                      <div className="nav-music-current-player_track_info">
+                        <div className="nav-music-current-player_track_song_title">
+                          <span>Северное сияние</span>
+                        </div>
+                        <div className="nav-music-current-player_track_song_performer">
+                          <Link to="">Иван Дорн</Link>
+                        </div>
+                      </div>
+                      <div className="nav-music-current-player_track_duration">0:17</div>
+
+                    </div>
+                    <div className="nav-music-current-player_track_volume"></div>
+                    <div className="nav-music-current-player_track_slider"></div>
+                  </div>
+                  <div className="nav-music-current-player_buttons">
+                    <button><i className="i fa fa-plus"></i></button>
+                    <button><i className="fa fa-random"></i></button>
+                    <button><i className="fa fa-repeat"></i></button>
+                    <button><i className="fa fa-signal"></i></button>
+                    <button><i className="fa fa-magic"></i></button>
+                    <button><i className="fa fa-share"></i></button>
+                  </div>
+                </div>
+                <div className="nav-music-content-block">
+
+                </div>
               </div>
             </div>
           </div>

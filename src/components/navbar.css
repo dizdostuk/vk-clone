@@ -269,8 +269,6 @@ span.nav-notify-header_label_urpage {
 }
 
 /*****************Event Submenu*******************/
-.nav-notify_event_submenu {
-}
 .nav-notify_event_submenu_icon {
   background: url("https://vk.com/images/svg_icons/contour_arrow.svg") no-repeat;
   width: 18px;
@@ -313,8 +311,115 @@ span.nav-notify-header_label_urpage {
   background-color: #e4eaf0;
 }
 
+/*********** Styles for navbar music ********************/
 
-/* Styles for navigation profile */
+.nav-music-wrap {
+  width: 660px;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #c5d0db;
+  border-radius: 0 0 4px 4px;
+  margin-left: -307px;
+  box-shadow: 0 20px 40px 0 rgba(0,0,0,.3);
+  display: grid;
+  grid-template-rows: 57px 1fr;
+}
+.nav-music-current-player {
+  display: grid;
+  grid-template-columns: 54px 19px 19px 40px 328px 199px;
+  align-items: center;
+}
+.nav-music-current-player button {
+  background: none;
+  border: none;
+  font-size: 20px;
+}
+.nav-music-current-player button i {
+  color: #828a99;
+}
+.nav-music-current-player button i:hover {
+  cursor: pointer;
+}
+.nav-music-current-player button > .fa-play {
+  width: 28px;
+  height: 28px;
+  background-color: #5181b8;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 13px;
+}
+.nav-music-current-player button > .fa-play:before {
+  position: relative;
+  top: 6px;
+  left: 1px;
+}
+.nav-music-current-player button > .fa-fast-backward,
+.nav-music-current-player button > .fa-fast-forward {
+  width: 9px;
+  height: 10px;
+  color: #7e9ec1;
+  font-size: 13px;
+}
+.nav-music-current-player button > .fa-fast-backward:hover,
+.nav-music-current-player button > .fa-fast-forward:hover {
+  color: #5181b8;
+}
+
+.nav-music-current-player_music_cover {
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+}
+
+.nav-music-current-player_track {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.nav-music-current-player_track_wrap {
+  margin-left: 30px;
+}
+.nav-music-current-player_track_info {
+  text-align: left;
+  font-size: 13px;
+  line-height: 14px;
+}
+.nav-music-current-player_track_song_title > span {
+  font-weight: 500;
+}
+.nav-music-current-player_track_song_performer > a {
+  text-decoration: none;
+  color: #939393;
+  font-size: 12.5px;
+}
+.nav-music-current-player_track_song_performer > a:hover {
+  text-decoration: underline;
+}
+.nav-music-current-player_track_duration {
+  font-size: 13px;
+  color: #939393;
+  margin-top: 7px;
+  margin-left: -30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************ Styles for navigation profile ******************/
 .nav-profile {
   display: grid;
   grid-template-columns: 1fr 1fr 10px;
