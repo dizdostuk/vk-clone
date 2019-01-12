@@ -1,0 +1,244 @@
+/***** Styles for navigation notify *****/
+.grid-notify-music {
+  display: grid;
+  grid-template-columns: repeat(2, 46px);
+  text-align: center;
+  align-items: center;
+}
+.nav-notify_icon {
+  height: 42px;
+}
+.nav-notify_icon:hover {
+  background-color: #3d6898;
+  cursor: pointer;
+}
+.nav-notify_icon > i {
+  margin-top: 15px;
+}
+.nav-notification-wrap {
+  width: 430px;
+  height: 402px;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #c5d0db;
+  border-radius: 0 0 4px 4px;
+  margin-left: 0;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3);
+  opacity: 0;
+}
+.nav-notification-wrap > i {
+  border-width: 6px;
+  margin: 14px -7px;
+  position: absolute;
+  pointer-events: none;
+  height: 0;
+  font-size: 20px;
+  color: #fff;
+  bottom: 100%;
+  left: 23px;
+}
+/**********Notify Header************/
+.nav-notify-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  padding: 11px 14px;
+  color: #000;
+  font-size: 13px;
+  font-weight: 400;
+  border-bottom: 1px solid #e7e8ec;
+}
+.nav-notify-header_label {
+  height: 13px;
+  justify-self: start;
+}
+span.nav-notify-header_label_urpage {
+  font-weight: 500;
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.nav-notify-header_link {
+  font-weight: 400;
+  justify-self: end;
+  text-decoration: none;
+  color: #2a5885;
+}
+.nav-notify-header_link:hover {
+  text-decoration: underline;
+}
+
+.nav-notify-events {
+  width: 430px;
+  height: auto;
+}
+
+.nav-notify_event {
+  display: grid;
+  grid-template-columns: 10% 1fr 5%;
+  padding: 10px 14px;
+  align-items: center;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid #e7e8ec;
+}
+.nav-notify_event:hover {
+  background-color: #fafbfc;
+}
+.nav-notify_event:hover .nav-notify_event_submenu_icon {
+  display: block;
+}
+
+.nav-notify_event_image {
+  align-self: start;
+}
+.nav-notify_event_image img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.nav-notify_event_image i {
+  position: relative;
+  top: -15px;
+  left: 10px;
+  color: #e44040;
+  background-color: #ffffff;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid;
+  text-align: center;
+}
+.fa-heart:before {
+  content: "\F004";
+  position: relative;
+  top: 4px;
+  left: 0.5px;
+}
+.fa-gift:before {
+  content: "\F06B";
+  position: relative;
+  top: 2px;
+  left: 0.2px;
+}
+.fa-comment:before {
+  content: "";
+  position: relative;
+  top: 0.5px;
+  left: 0.2px;
+}
+/************Description*****************/
+.nav-notify_event_description {
+  text-align: left;
+  margin-left: 12px;
+  margin-top: 3px;
+  align-self: start;
+}
+.nav-notify_event_description_header {
+  color: #000;
+  font-size: 12.5px;
+  line-height: 17px;
+}
+.nav-notify_event_description_header > b > a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #2a5885;
+}
+.nav-notify_event_description_header > b > a:hover {
+  text-decoration: underline;
+}
+.nav-notify_event_description_header > a {
+  color: #42648b;
+  text-decoration: none;
+}
+.nav-notify_event_description_header > a:hover {
+  text-decoration: underline;
+}
+.nav-notify_event_description_text {
+  font-size: 12.5px;
+}
+.nav-notify_event_description_text a {
+  text-decoration: none;
+}
+.nav-notify_event_description_text a:hover {
+  text-decoration: underline;
+}
+.nav-notify_event_description_footer {
+  padding-top: 2px;
+  font-size: 12.5px;
+}
+.nav-notify_event_description_footer a {
+  text-decoration: none;
+  color: #2a5885;
+}
+.nav-notify_event_description_footer a:hover {
+  text-decoration: underline;
+}
+.notify-date {
+  color: #939393;
+  line-height: 1.417;
+}
+
+.nav-notify_event_description_buttons {
+  margin-top: 8px;
+}
+.notify-button {
+  padding: 7px 16px 8px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 12.5px;
+  text-decoration: none;
+}
+.notify-button.secondary {
+  background-color: #e5ebf1;
+  color: #55677d;
+}
+.notify-button.secondary:hover {
+  cursor: pointer;
+  background-color: #dfe6ed;
+}
+
+/*****************Event Submenu*******************/
+.nav-notify_event_submenu_icon {
+  background: url("https://vk.com/images/svg_icons/contour_arrow.svg") no-repeat;
+  width: 18px;
+  height: 25px;
+  cursor: pointer;
+  margin-top: -25px;
+  margin-left: 10px;
+  display: none;
+}
+.nav-notify_event_submenu:hover .nav-notify_event_submenu_actions {
+  cursor: pointer;
+  display: grid;
+}
+.nav-notify_event_submenu_actions {
+  position: absolute;
+  margin-top: -10px;
+  right: 0;
+  font-weight: 400;
+  background: #fff;
+  border: 1px solid #c5d0db;
+  padding: 4px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  min-width: 150px;
+  grid-template-rows: 1fr 1fr;
+  text-align: left;
+  transition: all 0.3s ease;
+  display: none;
+}
+.nav-notify_event_submenu_actions > a {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  color: #2a5885;
+  outline: none;
+  text-decoration: none;
+  font-size: 12.5px;
+}
+.nav-notify_event_submenu_actions > a:hover {
+  background-color: #e4eaf0;
+}

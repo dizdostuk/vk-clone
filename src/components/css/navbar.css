@@ -1,0 +1,87 @@
+.fakeinput,
+div[contenteditable="true"],
+input.big_text,
+input.file,
+input.search,
+input.text,
+input[type="button"],
+input[type="password"],
+input[type="search"],
+input[type="submit"],
+input[type="text"],
+input[type~="email"],
+input[type~="password"],
+input[type~="search"],
+input[type~="text"],
+textarea {
+  font-size: 13px;
+  outline: none;
+  box-shadow: none;
+}
+.header {
+  width: 100%;
+  height: 42px;
+  background-color: #4a76a8;
+  position: fixed;
+  top: 0;
+  display: grid;
+  grid-template-rows: 100%;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+div.nav-layout {
+  width: 960px !important;
+  height: 42px !important;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.item4 {
+  justify-self: end;
+  cursor: pointer;
+}
+
+.logo {
+  background: url("https://www.vk.com/images/svg_icons/ic_head_logo.svg")
+    no-repeat;
+  width: 46px;
+  height: 23px;
+  margin: 7px 10px 0 -3px;
+}
+
+/**************Navbar Input*********************/
+.search {
+  position: relative;
+  left: -20px;
+}
+.text-head-input {
+  border: 0;
+  box-sizing: border-box;
+  padding: 6px 6px 6px 19px;
+  margin: 7px 0;
+  height: 28px;
+  line-height: 16px;
+  width: 230px;
+  border-radius: 14px;
+  -o-transition: background-color 0.05s, color 0.05s;
+  transition: background-color 0.05s, color 0.05s;
+  background: #224b7a
+    url("https://www.vk.com/images/svg_icons/ic_head_loupe.svg") no-repeat;
+  padding-left: 19px;
+  border-left: 8px solid transparent;
+  background-position: left 8px;
+  color: #d9e2ec;
+  outline: none;
+  font-size: 13px;
+}
+.text-head-input:focus {
+  background-color: #fff;
+  color: #000;
+}

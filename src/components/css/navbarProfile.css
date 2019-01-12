@@ -1,0 +1,56 @@
+/************ Styles for navigation profile ******************/
+.nav-profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 10px;
+  align-items: center;
+}
+
+.nav-profile-name {
+  font-weight: 700;
+  font-size: 12.5px;
+  color: #fff;
+  position: relative;
+  right: 10px;
+}
+
+.nav-profile-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+}
+
+.nav-profile-arrow {
+  margin-left: 5px;
+}
+.arrow-opacity {
+  color: #fff;
+  font-size: 13px;
+  opacity: 0.45;
+}
+
+.nav-profile-menu {
+  visibility: hidden;
+  position: absolute;
+  top: 42px;
+  right: 120px;
+  width: 160px;
+  border: 1px solid #c5d0db;
+  padding: 4px 0;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.nav-profile-menu_links {
+  font-size: 12.5px;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  color: #2a5885;
+}
+.nav-profile-sep {
+  margin: 4px 13px;
+  border-top: 1px solid #dbe4ec;
+}
