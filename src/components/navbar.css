@@ -333,12 +333,16 @@ span.nav-notify-header_label_urpage {
   background: none;
   border: none;
   font-size: 20px;
+  outline: none;
 }
 .nav-music-current-player button i {
-  color: #828a99;
+  color: #a0a9bb;
+  margin-right: 2px;
+  
 }
 .nav-music-current-player button i:hover {
   cursor: pointer;
+  color: #767d8a;
 }
 .nav-music-current-player button > .fa-play {
   width: 28px;
@@ -398,10 +402,45 @@ span.nav-notify-header_label_urpage {
 .nav-music-current-player_track_duration {
   font-size: 13px;
   color: #939393;
-  margin-top: 7px;
+  margin-top: 11px;
   margin-left: -30px;
 }
-
+/*Music Volume*/
+.nav-music-current-player_track_volume {
+  width: 50px;
+  float: right;
+  margin-top: -10px;
+  margin-right: 7px;
+}
+.volume_slider-slide {
+  height: 2px;
+  background-color: #e7e8ec;
+}
+.volume_slider-slide_amount,
+.track_slider-slide_amount {
+  height: 2px;
+  top: auto;
+  bottom: 0;
+}
+.volume_slider-slide_handler,
+.track_slider-slide_handler {
+  height: 6px;
+  width: 6px;
+  background-color: #5181b8;
+  margin-top: -4px;
+  border-radius: 50%;
+}
+/* Music slider */
+.nav-music-current-player_track_slider {
+  padding: 0 76px 0 10px;
+  margin-top: 7px;
+  margin-left: -10px;
+}
+.track_slider-slide {
+  width: 100%;
+  height: 2px;
+  background-color: #e7e8ec;
+}
 
 
 

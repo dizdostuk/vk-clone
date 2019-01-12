@@ -170,7 +170,6 @@ const Navbar = () => {
                   <div className="nav-music-current-player_track_wrap">
                   
                     <div className="nav-music-current-player_track">
-
                       <div className="nav-music-current-player_track_info">
                         <div className="nav-music-current-player_track_song_title">
                           <span>Северное сияние</span>
@@ -180,11 +179,23 @@ const Navbar = () => {
                         </div>
                       </div>
                       <div className="nav-music-current-player_track_duration">0:17</div>
-
                     </div>
-                    <div className="nav-music-current-player_track_volume"></div>
-                    <div className="nav-music-current-player_track_slider"></div>
+
+                    <div className="nav-music-current-player_track_volume">
+                      <div className="volume_slider-slide">
+                        <div className="volume_slider-slide_amount"></div>
+                        <div className="volume_slider-slide_handler"></div>
+                      </div>
+                    </div>
+
+                    <div className="nav-music-current-player_track_slider">
+                      <div className="track_slider-slide">
+                        <div className="track_slider-slide_amount"></div>
+                        <div className="track_slider-slide_handler"></div>
+                      </div>
+                    </div>
                   </div>
+
                   <div className="nav-music-current-player_buttons">
                     <button><i className="i fa fa-plus"></i></button>
                     <button><i className="fa fa-random"></i></button>
