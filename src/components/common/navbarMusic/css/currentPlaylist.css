@@ -1,8 +1,5 @@
-#currentPlaylist {
-  display: none;
-}
 .grid-item_current_playlist_section {
-  padding-top: 10px;
+  padding: 20px;
 }
 .current_playlist-audio_lists {
   display: grid;

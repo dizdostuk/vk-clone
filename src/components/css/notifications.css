@@ -24,6 +24,8 @@
   border-radius: 0 0 4px 4px;
   margin-left: 0;
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3);
+  -o-transition: opacity 80ms linear;
+  transition: opacity 80ms linear;
   opacity: 0;
 }
 .nav-notification-wrap > i {

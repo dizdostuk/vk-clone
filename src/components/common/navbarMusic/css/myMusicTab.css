@@ -1,12 +1,10 @@
 /* Styles for audio section */
-#myAudioContent {
-  display: none;
-}
 .audio_section {
   padding: 20px;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-column-gap: 5px;
+  height: auto;
 }
 .audio_page_shuffle_all {
   text-align: left;

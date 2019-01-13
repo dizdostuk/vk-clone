@@ -1,6 +1,9 @@
 /*********** Styles for navbar music ********************/
-
+.opacityOn {
+  opacity: 1 !important;
+}
 .nav-music-wrap {
+  opacity: 0;
   width: 660px;
   position: absolute;
   background-color: #fff;
@@ -10,17 +13,29 @@
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3);
   display: grid;
   grid-template-rows: 57px 1fr;
+  -o-transition: opacity 80ms ease-in;
+  transition: opacity 80ms ease-in;
 }
-
+.nav-music-wrap > i {
+  top: -14px;
+  border-width: 6px;
+  position: absolute;
+  pointer-events: none;
+  height: 0;
+  font-size: 20px;
+  color: #fff;
+  bottom: 100%;
+  left: 324px;
+  z-index: 800;
+}
 
 /*********** Styles for navbar music content ********************/
 
 .nav-music-content-block {
   width: 660px;
-  height: 361px;
+  height: auto;
 }
 .nav-music-content-block_grid {
   display: grid;
-  grid-template-rows: 66px 45px auto;
+  grid-template-rows: 66px 1fr;
 }
-

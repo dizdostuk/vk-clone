@@ -5,10 +5,13 @@
   margin-top: 10px;
 }
 .ui_tabs_block {
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 5px;
   justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0 10px 0 10px;
+  margin-bottom: 0;
   border-bottom: 1px solid #e7e8ec;
 }
 .ui_tab {
@@ -26,7 +29,14 @@
 .ui_tab:hover {
   border-bottom: 2px solid #cad2db;
 }
-.ui_tab_active {
+.ui_tab:focus {
+  border-bottom: none;
+}
+.react-tabs__tab--selected {
+  border-bottom: 2px solid #5181b8;
+  padding-bottom: 13px;
+}
+.react-tabs__tab--selected:hover {
   border-bottom: 2px solid #5181b8;
   padding-bottom: 13px;
 }

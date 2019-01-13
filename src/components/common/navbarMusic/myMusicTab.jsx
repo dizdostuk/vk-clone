@@ -5,7 +5,7 @@ import "./css/myMusicTab.css";
 
 const MyMusicTab = () => {
   return (
-    <div id="myAudioContent" className="grid-item_audio_page_section">
+    <div id="myMusic" className="grid-item_audio_page_section tabItem">
       <div className="audio_section">
         <div className="audio_page_left_grid-row">
           <div className="audio_page_shuffle_all">
@@ -15,6 +15,9 @@ const MyMusicTab = () => {
 
           <div className="audio_page-audio_lists">
 
+            <AudioContent />
+            <AudioContent />
+            <AudioContent />
             <AudioContent />
             <AudioContent />
             <AudioContent />

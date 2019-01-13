@@ -1,4 +1,7 @@
 /************ Styles for navigation profile ******************/
+.visibleOn {
+  visibility: visible !important;
+}
 .nav-profile {
   display: grid;
   grid-template-columns: 1fr 1fr 10px;
@@ -31,13 +34,21 @@
 .nav-profile-menu {
   visibility: hidden;
   position: absolute;
-  top: 42px;
-  right: 120px;
+  top: 48px;
+  right: 218px;
   width: 160px;
   border: 1px solid #c5d0db;
   padding: 4px 0;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  -o-transition: visibility 80ms linear;
+  transition: visibility 80ms linear;
+}
+.nav-profile-menu > i {
+  position: absolute;
+  top: -12px;
+  left: 127px;
+  color: #c5d0db;
 }
 .nav-profile-menu_links {
   font-size: 12.5px;
@@ -49,6 +60,9 @@
   line-height: 30px;
   padding: 0 15px;
   color: #2a5885;
+}
+.nav-profile-menu_links:hover {
+  background-color: #e4eaf0;
 }
 .nav-profile-sep {
   margin: 4px 13px;

@@ -12,8 +12,9 @@ class App extends Component {
       <React.Fragment>
         <Navbar />
         <Switch>
-          <Route to="/" component={Feed} />
-          <Route to="/notFound" component={NotFound} />
+          <Route path="/feed" component={Feed} />
+          <Route path="/notFound" component={NotFound} />
+          <Redirect from="/" exact to="/feed" />
           <Redirect to="/notFound" />
         </Switch>
       </React.Fragment>
