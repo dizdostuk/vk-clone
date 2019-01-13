@@ -1,0 +1,32 @@
+/* Styles for music tabs */
+.grid-item_ui_tabs {
+  align-self: center;
+  justify-self: center;
+  margin-top: 10px;
+}
+.ui_tabs_block {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-evenly;
+  border-bottom: 1px solid #e7e8ec;
+}
+.ui_tab {
+  color: #656565;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 12.5px;
+  padding-top: 5px;
+  padding-bottom: 13px;
+  outline: none;
+}
+.ui_tab:hover {
+  border-bottom: 2px solid #cad2db;
+}
+.ui_tab_active {
+  border-bottom: 2px solid #5181b8;
+  padding-bottom: 13px;
+}

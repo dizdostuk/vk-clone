@@ -1,0 +1,48 @@
+.audio_list_content {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  padding: 5px;
+}
+.audio_list_content:hover {
+  cursor: pointer;
+  background-color: #e9edf1;
+}
+.audio_list_content:hover .audio_list_duration {
+  visibility: hidden;
+}
+.audio_list_content:hover .audio_list_actions {
+  visibility: visible;
+}
+.audio_list_music_cover {
+  margin-left: 0 !important;
+}
+.audio_list_inner {
+  margin-left: 10px;
+}
+.audio_list_info {
+  font-size: 13px;
+  color: #939393;
+  margin-top: 11px;
+  margin-left: -30px;
+}
+.audio_list_duration {
+  visibility: visible;
+}
+.audio_list_actions {
+  position: absolute;
+  margin-top: -17px;
+  margin-left: -5px;
+  visibility: hidden;
+}
+.audio_action {
+  background: none;
+  border: none;
+}
+.audio_action i {
+  font-size: 22px;
+  color: #a3a9b5;
+}
+.audio_action i:hover {
+  color: #828a99;
+  cursor: pointer;
+}

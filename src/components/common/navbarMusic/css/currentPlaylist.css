@@ -1,0 +1,15 @@
+#currentPlaylist {
+  display: none;
+}
+.grid-item_current_playlist_section {
+  padding-top: 10px;
+}
+.current_playlist-audio_lists {
+  display: grid;
+  grid-auto-rows: 48px;
+  grid-row-gap: 5px;
+  padding: 0 10px 0 10px;
+}
+.current_playlist-audio_lists > .audio_list_content > .audio_list_inner {
+  margin-left: -10px;
+}

@@ -1,0 +1,17 @@
+.grid-item_playlist_section {
+  justify-self: start;
+}
+.playlist_section_wrap {
+  padding: 20px;
+}
+.playlist_section_header {
+  font-size: 16px;
+  font-weight: 450;
+  text-align: left;
+}
+
+.playlist_section_grid_playlists {
+  display: grid;
+  grid-auto-rows: 210px;
+  grid-template-columns: repeat(4, 1fr);
+}

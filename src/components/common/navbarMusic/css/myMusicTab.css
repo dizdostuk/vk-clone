@@ -1,0 +1,89 @@
+/* Styles for audio section */
+#myAudioContent {
+  display: none;
+}
+.audio_section {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column-gap: 5px;
+}
+.audio_page_shuffle_all {
+  text-align: left;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 10% 1fr;
+}
+.audio_page_shuffle_all:hover {
+  background-color: #e9edf1;
+  cursor: pointer;
+}
+.audio_page_shuffle_all i {
+  font-size: 22px;
+  justify-self: center;
+}
+.shuffle_all_button {
+  border: none;
+  background: transparent;
+  outline: none;
+  position: relative;
+  width: 100%;
+  padding: 4px;
+  cursor: pointer;
+  text-align: left;
+  color: #000;    
+  font-size: 13px;
+  line-height: 40px;
+  font-weight: 500;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+}
+
+.audio_page-audio_lists {
+  display: grid;
+  grid-auto-rows: 48px;
+  grid-row-gap: 5px;
+  align-items: center;
+  margin: 2px;
+}
+
+
+/* Audio page right side. Friend Side. */
+.audio_friends_right_lists {
+  display: grid;
+  grid-auto-rows: 45px;
+  grid-row-gap: 5px;
+  align-items: center;
+  border-left: 1px solid #e7e8ec;
+}
+.audio_friend {
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+}
+.audio_friend:hover {
+  background-color: #f0f2f5;
+}
+.audio_friend_avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+.audio_friend_audio_count,
+.audio_friend_audios {
+  max-width: 145px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 1.2em;
+}
+.audio_friend_audio_count:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.audio_friend_audios {
+  color: #939393;
+  cursor: pointer;
+}
