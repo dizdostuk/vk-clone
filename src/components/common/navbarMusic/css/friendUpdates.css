@@ -1,0 +1,37 @@
+.grid-item_friend_updates {
+  padding: 20px;
+}
+.friend_updates_friend_grid {
+  display: grid;
+  grid-template-columns: 10% 1fr;
+  border-bottom: 1px solid #e6e7eb;
+  padding: 15px 10px;
+}
+.audio_feed_ava {
+  margin-right: 15px;
+}
+.friend_avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.friend_audio_event {
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+.friend_audio_text {
+  justify-self: start;
+  font-size: 13px;
+}
+.friend_audio_text a {
+  color: #2a5885;
+  text-decoration: none;
+  cursor: pointer;
+}
+.friend_audio_text a:hover {
+  text-decoration: underline;
+}
+.friend_audio_rows {
+  padding: 15px;
+}
