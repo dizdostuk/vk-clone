@@ -1,0 +1,62 @@
+.ads_left {
+  position: relative;
+  width: 145px;
+  min-height: 3px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+.ads_ads_box3 {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 20px;
+}
+.ads_ad_box-link  {
+  display: grid;
+  grid-template-rows: 1fr 25%;
+}
+.ads_ad_box-link:hover .ads_ad_close_button {
+  opacity: 1;
+}
+.ads_box_img {
+  position: relative;
+}
+.ads_ad_photo_box {
+  height: 165px;
+  max-height: 165px;
+}
+.ads_ad_photo {
+  width: 145px;
+  max-width: 145px;
+  border-radius: 2px;
+}
+.ads_ad_close_button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #1d2022;
+  background: rgba(29,32,34,.4);
+  border-radius: 0 2px 0 2px;
+  padding: 5px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -o-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+  cursor: pointer;
+}
+.ads_ad_close_button i {
+  color: #edeeee;
+}
+
+.ads_ad_title {
+  padding: 7px 0 0;
+  line-height: 15px;
+  color: #42648b;
+  font-weight: 700;
+  font-size: 12px;
+}
+.ads_ad_domain {
+  color: #939699;
+  font-size: 12px;
+  line-height: 15px;
+  padding-top: 1px;
+}

@@ -1,0 +1,83 @@
+.left_bottom_menu {
+  line-height: 19px;
+  padding: 14px 0 4px;
+  font-size: 12px;
+  text-align: left;
+}
+.left_bottom_menu a:hover {
+  text-decoration: underline;
+}
+.left_menu_nav {
+  padding-right: 10px;
+  color: #939699;
+  white-space: nowrap;
+}
+.actions_menu_wrap {
+  position: relative;
+  display: inline-block;
+}
+.actions_menu_icon {
+  position: static;
+  display: inline;
+  background: none;
+  width: auto;
+  height: auto;
+  top: auto;
+  right: auto;
+}
+.left_menu_nav:hover .actions_menu {
+  opacity: 1;
+}
+.left_menu_more::after {
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 5px;
+  background: url(https://vk.com/images/icons/menu_arrow.png) no-repeat;
+  background-position: right 0;
+}
+
+.actions_menu {
+  font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+  position: absolute;
+  min-width: 150px;
+  max-width: 250px;
+  top: 25px;
+  right: -4px;
+  background: #fff;
+  z-index: 5;
+  border: 1px solid #c5d0db;
+  padding: 4px 0;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -o-transition: opacity 100ms linear, top 100ms linear, bottom 100ms linear, visibility 100ms linear;
+  transition: opacity 100ms linear, top 100ms linear, bottom 100ms linear, visibility 100ms linear;
+  pointer-events: none;
+}
+.actions_menu::after,
+.actions_menu::before {
+  position: absolute;
+  pointer-events: none;
+  border: solid transparent;
+  content: '';
+  height: 0;
+  width: 0;
+  bottom: 100%;
+  right: 30.5px;
+}
+.actions_menu_item {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  color: #2a5885;
+  outline: none;
+}

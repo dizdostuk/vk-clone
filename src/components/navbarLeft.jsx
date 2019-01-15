@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import "./css/navbarLeft.css";
+import AdsBox from './common/ads';
+import LeftBottomMenu from './common/leftBottomMenu';
 
 const NavbarLeft = () => {
   return (
@@ -109,8 +111,30 @@ const NavbarLeft = () => {
                 </span>
               </Link>
             </li>
+            <div className="more_div"></div>
+            <li>
+              <Link to="" className="left_row">
+                <span className="left_icon"><i class="fa fa-group"></i></span>
+                <span className="left_label">Страница удалена</span>
+                <span className="left_count_wrap">
+                  <div className="left_count_sign">0</div>
+                </span>
+              </Link>
+            </li>
+            <div className="more_div"></div>
+            <li>
+              <Link to="" className="left_row">
+                <span className="left_icon"><i class="fa fa-th-large"></i></span>
+                <span className="left_label">Мое приложение</span>
+                <span className="left_count_wrap">
+                  <div className="left_count_sign">0</div>
+                </span>
+              </Link>
+            </li>
           </ol>
         </nav>
+        <AdsBox />
+        <LeftBottomMenu />
       </div>
     </div>
   );
