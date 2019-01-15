@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Route, Switch, Redirect } from "react-router-dom";
 import Navbar from "./components/navbar";
-import Feed from "./components/main_page/feed";
 import NotFound from "./components/notFound";
 import './App.css';
+import NavbarLeft from './components/navbarLeft';
 
 
 class App extends Component {
@@ -11,8 +11,14 @@ class App extends Component {
     return (
       <React.Fragment>
         <Navbar />
+        <div className="page_wrap" style={{width: "1348px"}}>
+          <div className="page_layout" style={{width: "960px"}}>
+            <NavbarLeft />
+          </div>
+        </div>
+        
         <Switch>
-          <Route path="/feed" component={Feed} />
+          <Route path="/feed" />
           <Route path="/notFound" component={NotFound} />
           <Redirect from="/" exact to="/feed" />
           <Redirect to="/notFound" />
