@@ -4,6 +4,7 @@ import Navbar from "./components/navbar";
 import NotFound from "./components/notFound";
 import './App.css';
 import NavbarLeft from './components/navbarLeft';
+import RenderMainComponent from './components/renderMainComponent';
 
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
         <div className="page_wrap" style={{width: "1348px"}}>
           <div className="page_layout" style={{width: "960px"}}>
             <NavbarLeft />
+            <RenderMainComponent />
           </div>
         </div>
         

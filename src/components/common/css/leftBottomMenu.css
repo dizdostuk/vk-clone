@@ -25,7 +25,7 @@
   top: auto;
   right: auto;
 }
-.left_menu_nav:hover .actions_menu {
+.actions_menu_wrap:hover .actions_menu {
   opacity: 1;
 }
 .left_menu_more::after {

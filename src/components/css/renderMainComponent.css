@@ -1,0 +1,18 @@
+.wide_column_wrap {
+    position: relative;
+    top: 0;
+    width: 550px;
+}
+.wide_column {
+    width: 100%;
+    position: sticky;
+    top: 60px !important;
+}
+
+.page_block {
+    position: relative;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+    margin: 15px 0 0;
+}
