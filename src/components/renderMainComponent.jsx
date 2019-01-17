@@ -30,7 +30,11 @@ class RenderMainComponent extends Component {
                 />
               </Link>
               <div className="post_field_wrap">
-                <div className="submit_post_field" contentEditable="true" role="textbox"></div>
+                <div
+                  className="submit_post_field"
+                  contentEditable="true"
+                  role="textbox"
+                />
                 <div className="placeholder">
                   <div className="plh_input">
                     <div className="plh_content">Что у вас нового?</div>
@@ -38,7 +42,7 @@ class RenderMainComponent extends Component {
                 </div>
                 <div className="emoji_smile_wrap">
                   <div className="emoji_smile">
-                    <i className="fa fa-emoji-smile"></i>
+                    <i className="fas fa-smile-beam" />
                   </div>
                 </div>
                 <div className="post_actions_btns">
@@ -48,8 +52,12 @@ class RenderMainComponent extends Component {
                     </div>
                     <div className="eltt eltt_fancybox">
                       <div className="post_action_tt_content">
-                        <div className="post_action_tt_item radiobtn">Видно всем</div>
-                        <div className="post_action_tt_item radiobtn">Только для друзей</div>
+                        <div className="post_action_tt_item radiobtn">
+                          Видно всем
+                        </div>
+                        <div className="post_action_tt_item radiobtn">
+                          Только для друзей
+                        </div>
                       </div>
                     </div>
                   </div>
