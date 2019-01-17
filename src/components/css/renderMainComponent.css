@@ -16,3 +16,98 @@
     box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
     margin: 15px 0 0;
 }
+
+.post_upload_dropbox {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    color: #2a5885;
+    text-align: center;
+    z-index: 119;
+}
+.post_upload_dropbox_inner {
+    position: absolute;
+    top: 10;
+    right: 10;
+    bottom: 10;
+    left: 10;
+    border: 1px dashed #a9bbcf;
+}
+.post_upload_label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1em;
+    margin: auto 10px;
+    opacity: 0.7;
+    font-size: 13px;
+}
+.release_label {
+    display: none;
+}
+
+/**Front of push post*/
+.post_field_user_link {
+    display: block;
+    float: left;
+    height: 28px;
+    position: relative;
+}
+.post_field_user_image {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    position: absolute;
+    top: 12px;
+    left: 20px;
+}
+.post_field_wrap {
+    position: relative;
+    margin-left: 48px;
+}
+
+div[contenteditable=true] {
+    box-sizing: border-box;
+    color: #000;
+    margin: 0;
+    background: #fff;
+    outline: none;
+    box-shadow: none;
+}
+div.submit_post_field.zoom_text[contenteditable=true] {
+    padding-top: 10px;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 1.4;
+    vertical-align: top;
+    overflow: hidden;
+    width: 100%;
+    min-height: 52px;
+    max-height: 52px;
+    padding: 16px 20px 16px 12px;
+    border: 0;
+    border-radius: 2px;
+    line-height: 1.462;
+    word-wrap: break-word;
+    resize: none;
+    
+}
+div.submit_post_field {
+    min-width: 80px;
+    max-height: none;
+    padding-right: 36px;
+}
+.placeholder {
+    position: relative;
+    z-index: 3;
+    cursor: text;
+    pointer-events: none;
+}
