@@ -3,7 +3,19 @@ import { Link } from "react-router-dom";
 import "./css/renderMainComponent.css";
 
 class RenderMainComponent extends Component {
-  state = {};
+  state = {
+    postString: "",
+    postChanged: false
+  };
+
+  handleChangePost = (e) => {
+    if(this.state.postString === "")
+      this.setState({postChanged: false});
+    else
+      this.setState({postChanged: true});
+      
+    this.setState({postString: e.target.value});    
+  }
   render() {
     return (
       <div className="wide_column_wrap">
@@ -34,8 +46,10 @@ class RenderMainComponent extends Component {
                   className="submit_post_field"
                   contentEditable="true"
                   role="textbox"
+                  onChange={this.handleChangePost}
+                  dangerouslySetInnerHTML={{__html: this.state.postString}}
                 />
-                <div className="placeholder">
+                <div className={ !this.state.postChanged ? "placeholder dp_block" : "placeholder dp_none"}>
                   <div className="plh_input">
                     <div className="plh_content">Что у вас нового?</div>
                   </div>

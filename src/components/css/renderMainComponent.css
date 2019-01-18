@@ -82,6 +82,19 @@ div[contenteditable=true] {
     outline: none;
     box-shadow: none;
 }
+div.submit_post_field[contenteditable=true] {
+    vertical-align: top;
+    overflow: hidden;
+    width: 100%;
+    min-height: 52px;
+    max-height: 52px;
+    padding: 16px 20px 16px 12px;
+    border: 0;
+    border-radius: 2px;
+    line-height: 1.462;
+    word-wrap: break-word;
+    resize: none;
+}
 div.submit_post_field.zoom_text[contenteditable=true] {
     padding-top: 10px;
     font-weight: 300;
@@ -110,6 +123,31 @@ div.submit_post_field {
     z-index: 3;
     cursor: text;
     pointer-events: none;
+}
+.dp_block {
+    display: block;
+}
+.dp_none {
+    display: none;
+}
+.placeholder .plh_input {
+    padding-top: 10px;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 1.4;
+    min-height: 80px;
+    max-height: none;
+    vertical-align: top;
+    overflow: hidden;
+    width: 100%;
+    min-height: 52px;
+    max-height: 52px;
+    padding: 16px 20px 16px 12px;
+    border: 0;
+    border-radius: 2px;
+    line-height: 1.462;
+    word-wrap: break-word;
+    resize: none;
 }
 .emoji_smile_wrap {
     top: 5px;

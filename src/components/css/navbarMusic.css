@@ -1,9 +1,9 @@
 /*********** Styles for navbar music ********************/
 .opacityOn {
-  opacity: 1 !important;
+  visibility: visible !important;
 }
 .nav-music-wrap {
-  opacity: 0;
+  visibility: hidden;
   width: 660px;
   position: absolute;
   background-color: #fff;
