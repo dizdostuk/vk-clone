@@ -1,4 +1,120 @@
 .container {
-    margin-top: 20px;
-    
+  margin-top: 20px;
+}
+.wide_column_wrap {
+  position: relative;
+  top: 0;
+  width: 550px;
+}
+.wide_column {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.page_block {
+  position: relative;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+  margin: 15px 0 0;
+}
+
+/**Front of push post*/
+.post_field_user_link {
+  display: block;
+  float: left;
+  height: 28px;
+  position: relative;
+}
+.post_field_user_image {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  position: absolute;
+  top: 12px;
+  left: 20px;
+}
+
+
+/************Stories****************/
+.stories-title {
+  padding: 16px 0 0 20px;
+  line-height: 15px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.stories_items_wrap {
+  padding: 19px 0 17px;
+}
+.stories_items {
+  display: grid;
+  grid-auto-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+.story_item {
+  width: 97px;
+  height: 167px;
+  border-radius: 8px;
+  background: no-repeat 50% /cover;
+  overflow: hidden;
+  background-clip: border-box;
+  position: relative;
+}
+.story_item::before {
+  position: absolute;
+  box-sizing: border-box;
+  height: 167px;
+  width: 97px;
+  border-radius: 8px;
+  background-color: rgba(0,0,0,.16);
+  content: '';
+}
+.story_item_author {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.story_item_author::after {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://vk.com/images/shadow_stories.png) repeat-x 0 100%;
+}
+.story_item_author_ava {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: no-repeat 50% / cover;
+  margin: 0 auto;
+  position: relative;
+}
+.story_item_author_ava::after {
+  content: '';
+  opacity: 0.48;
+  border: 2px solid #70c1ff;
+  position: absolute;
+  box-sizing: border-box;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 50%;
+  content: '';
+}
+.preview_author_name {
+  color: #99d3ff;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 6px auto 10px;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 0 1px 6px rgba(0,0,0,.4);
 }
