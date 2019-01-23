@@ -4,6 +4,8 @@ import PostDropbox from "../common/postDropbox";
 import PostField from "../common/postField";
 import SubmitPost from "../common/submitPost";
 import "./feed.css";
+import Stories from "./stories";
+import Posts from "./posts";
 
 class Feed extends Component {
   state = {
@@ -27,11 +29,13 @@ class Feed extends Component {
       fontSize: "13px"
     };
     const storyBackgroundStyle = {
-      backgroundImage: "url(https://sun1-15.userapi.com/c851024/v851024449/97d14/dwIwPbWx2S8.jpg)"
-    }
+      backgroundImage:
+        "url(https://sun1-15.userapi.com/c851024/v851024449/97d14/dwIwPbWx2S8.jpg)"
+    };
     const storyAuthAva = {
-      backgroundImage: "url(https://sun1-15.userapi.com/c849124/v849124515/10700d/_y8-D2hgSB4.jpg?ava=1)"
-    }
+      backgroundImage:
+        "url(https://sun1-15.userapi.com/c849124/v849124515/10700d/_y8-D2hgSB4.jpg?ava=1)"
+    };
     const { postString, postChanged } = this.state;
     return (
       <div className="wide_column_wrap">
@@ -57,30 +61,13 @@ class Feed extends Component {
 
               <SubmitPost />
             </div>
-            
-            <div className="page_block">
-              <div className="stories-title">Истории</div>
-              <div className="stories_items_wrap">
-                <div className="stories_items">
-                  <Link to="" className="story_item" style={storyBackgroundStyle}>
-                    <div className="story_item_author">
-                      <div className="story_item_author_ava" style={storyAuthAva}>
-                        
-                      </div>
-                      <div className="preview_author_name">Begin English</div>
-                    </div>
-                  </Link>
-                  <Link to="" className="story_item" style={{backgroundImage: "url(https://sun1-10.userapi.com/c841006/v841006430/4a4c7/F84oykm1zM0.jpg)"}}>
-                    <div className="story_item_author">
-                      <div className="story_item_author_ava" style={storyAuthAva}>
-                        
-                      </div>
-                      <div className="preview_author_name">Тони Робинс</div>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-            </div>
+
+            <Stories
+              storyBackgroundStyle={storyBackgroundStyle}
+              storyAuthAva={storyAuthAva}
+            />
+
+            <Posts />
           </div>
         </div>
       </div>
