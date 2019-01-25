@@ -18,3 +18,106 @@
     line-height: 15px;
     height: 15px;
 }
+
+/*************Posts****************/
+.feed_rows {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-gap: 15px;
+}
+.post_header {
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    justify-content: start;
+    padding: 15px 20px 0;
+}
+.post_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.post_header_info {
+    margin-left: 8px;
+}
+.post_author {
+    font-size: 13px;
+    margin: 6px 0 3px;
+}
+.post_author .author {
+    color: #2a5885;
+    float: left;
+}
+.post_author .author:hover {
+    text-decoration: underline;
+}
+.post_author .explain {
+    color: #939393;
+    margin-left: 1px;
+    display: block;
+}
+.wall_fixed_label {
+    display: block;
+    font-weight: normal;
+}
+.post_date {
+    font-size: 13px;
+}
+.post_date .post_link {
+    color: #939393;
+}
+.post_date .post_link:hover {
+    text-decoration: underline;
+}
+
+
+.post_actions_menu {
+    align-self: center;
+    justify-self: end;
+    margin-top: -19px;
+}
+.post_actions_menu > i {
+    font-size: 28px;
+    color: #939393;
+    cursor: pointer;
+}
+.post_actions_menu > i:hover > .post_action_menu_wrap{
+    opacity: 1;
+}
+.post_action_menu_wrap {
+    position: absolute;
+    top: 47px;
+    right: 0;
+    border: 1px solid #c5d0db;
+    border-radius: 3px;
+    min-width: 150px;
+    max-width: 250px;
+    background: #fff;
+    padding: 4px 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -o-transition: opacity 100ms linear, top 100ms linear, bottom 100ms linear, visibility 100ms linear;
+    transition: opacity 100ms linear, top 100ms linear, bottom 100ms linear, visibility 100ms linear;
+    pointer-events: none;
+}
+.post_action_menu_wrap > i {
+    position: absolute;
+    top: -12px;
+    right: 22px;
+    font-size: 18px;
+    color: #c5d0db;
+}
+.post_action_menu {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+.post_action_link {
+    font-size: 13px;
+    color: #2a5885;
+    outline: none;
+    line-height: 28px;
+    padding-left: 8px;
+}
+.post_action_link:hover {
+    text-decoration: none;
+    background-color: #e4eaf0;
+}
