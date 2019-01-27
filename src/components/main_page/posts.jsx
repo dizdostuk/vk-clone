@@ -25,7 +25,9 @@ const Posts = () => {
                     Design Prosmotr
                   </Link>
                   <span className="explain">
-                    <span className="wall_fixed_label">&nbsp;запись закреплена</span>
+                    <span className="wall_fixed_label">
+                      &nbsp;запись закреплена
+                    </span>
                   </span>
                 </h5>
                 <div className="post_date">
@@ -37,7 +39,7 @@ const Posts = () => {
               <div className="post_actions_menu">
                 <i className="fa fa-caret-down" />
                 <div className="post_action_menu_wrap">
-                    <i className="fa fa-caret-up"></i>
+                  <i className="fa fa-caret-up" />
                   <div className="post_action_menu">
                     <Link to="" className="post_action_link">
                       Это не интересно
@@ -55,8 +57,62 @@ const Posts = () => {
                 </div>
               </div>
             </div>
-            <div className="post_content">
-
+            <div className="post_wall_content">
+              <div className="post_content">
+                <div className="post_content_text">
+                  Тактика допроса: искусство изобличения во лжи Иногда в процессе
+                  расследования перед следователем возникает задача изобличить во
+                  лжи как свидетеля или потерпевшего, так и подозреваемого либо
+                  обвиняемого. Допрашиваемый может давать ложные показания как в
+                  своих интересах, так и в ущерб им (например, при самооговоре).
+                  <br/>
+                  <span className="show_more">Показать полностью</span>
+                    <span className="display_text">
+                      <br/>
+                      <br/>
+                      Чтобы изобличить допрашиваемого в даче ложных показаний,
+                      следователю необходимо использовать тактические приёмы.Приёмы
+                      эмоционального воздействия При изобличении во лжи свидетеля и
+                      потерпевшего можно прибегнуть к таким приёмам: <br/> — убеждение в
+                      неправильности занятой позиции, её антигражданском характере;<br/>
+                      — разъяснение правовых последствий дачи ложных показаний;<br/> —
+                      разъяснение вредных последствий дачи ложных показаний для
+                      близких допрашиваемому лиц из числа потерпевших,
+                      подозреваемых, обвиняемых;<br/> — воздействие на положительные
+                      стороны личности допрашиваемого (чувство собственного
+                      достоинства, смелость, благородство, принципиальность и т.
+                      д.). Следственная тактика располагает целым арсеналом приёмов
+                      изобличения подозреваемого и обвиняемого в даче ими ложных
+                      показаний, а также оказания на них правомерного
+                      психологического воздействия с целью получить правдивые
+                      показания. Рассмотрим основные. 1. Убеждение. Этот приём
+                      заключается в обращении следователя к здравому смыслу
+                      допрашиваемого, побуждении его к раскаянию и чистосердечному
+                      признанию путём разъяснения как вредных последствий
+                      запирательства и лжи, так и благоприятных последствий
+                      признания своей вины и активного содействия расследованию
+                      совершенного преступления, а также преступлений прошлых лет,
+                      оставшихся нераскрытыми.
+                    </span>
+                </div>
+                <div className="post_content_image">
+                  <Link to="" className="post_image" style={{
+                    width: "510px",
+                    height: "255px",
+                    backgroundImage: "url(https://sun1-11.userapi.com/c851416/v851416996/a3636/YT6q7_XFtEo.jpg)"
+                  }}></Link>
+                </div>
+              </div>
+              <div className="post_wall_content_likes">
+                <div className="post_likes">
+                  <div className="replies"><i className="fa fa-heart"></i><span className="reply_count">1</span></div>
+                  <div className="replies"><i className="fa fa-comments"></i> <span className="reply_count">1</span></div>
+                  <div className="replies"><i className="fa fa-reply"></i><span className="reply_count">1</span></div>
+                  <div className="replies"><i className="fa fa-eye"></i><span className="reply_count">1</span></div>
+                </div>
+              </div>
+              
+              <div className="post_wall_content_comments"></div>
             </div>
           </div>
         </div>
