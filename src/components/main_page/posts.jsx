@@ -56,7 +56,6 @@ const Posts = () => {
               </div>
             </div>
             <div className="post_content">
-
             </div>
           </div>
         </div>
