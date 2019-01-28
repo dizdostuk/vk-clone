@@ -112,7 +112,77 @@ const Posts = () => {
                 </div>
               </div>
               
-              <div className="post_wall_content_comments"></div>
+              <div className="post_wall_content_comments">
+                  <div className="comment_lists">
+                    <div className="comment_wrap">
+                      <div className="comment">
+                        <Link to="" className="comment_image">
+                          <img
+                            src="https://sun1-10.userapi.com/c848628/v848628635/124b49/necA7LsWSKM.jpg?ava=1"
+                            alt="Avatar"/>
+                        </Link>
+                        <div className="comment_content">
+                          <div className="comment_header">
+                            <div className="comment_author">
+                              <Link to="">
+                                Владислав Ламборгини
+                              </Link>
+                            </div>
+                            <div className="comment_delete">
+                              <i className="fa fa-times"></i>
+                            </div>
+                          </div>
+                          <div className="comment_text">
+                            <div className="text">3000, не?</div>
+                          </div>
+                          <div className="comment_footer">
+                            <Link to="" className="comment_time">31 минуту назад</Link>
+                            <Link to="" className="comment_reply">Ответить</Link>
+                            <div className="comment_like"><i className="fa fa-heart"></i><span className="reply_count">1</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="reply_to_comment_wrap">
+                      <div className="reply_to_comment">
+                        <div className="comment">
+                          <Link to="" className="reply_comment_image">
+                            <img
+                              src="https://sun1-10.userapi.com/c848628/v848628635/124b49/necA7LsWSKM.jpg?ava=1"
+                              alt="Avatar"/>
+                          </Link>
+                          <div className="comment_content">
+                            <div className="comment_header">
+                              <div className="comment_author">
+                                <Link to="">
+                                  Владислав Ламборгини
+                                </Link>
+                              </div>
+                              <div className="comment_delete">
+                                <i className="fa fa-times"></i>
+                              </div>
+                            </div>
+                            <div className="comment_text">
+                              <div className="text">3000, не?</div>
+                            </div>
+                            <div className="comment_footer">
+                              <Link to="" className="comment_time">31 минуту назад</Link>
+                              <Link to="" className="comment_reply">Ответить</Link>
+                              <div className="comment_like"><i className="fa fa-heart"></i><span className="reply_count">1</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="comment_box">
+                    <div className="comment_avatar">
+                      <Link to=""><img src="https://pp.userapi.com/c851216/v851216536/7e424/YEfQL43SS_o.jpg?ava=1" alt=""/></Link>
+                    </div>
+                    <div className="comment_input"></div>
+                    <div className="comment_enter"></div>
+                  </div>
+              </div>
             </div>
           </div>
         </div>

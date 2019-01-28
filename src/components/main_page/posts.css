@@ -168,12 +168,119 @@
 .post_likes .replies {
     justify-self: center;
     cursor: pointer;
+    display: flex;
+    flex-flow: row;
+    opacity: 0.5;
 }
-.post_likes .replies:last-child {
+.post_likes .replies > i,
+.post_likes .replies > span {
+    color: #8a92a0;
+}
+.post_likes .replies:first-child {
+    margin-top: -6px;
+}
+.post_likes .replies:first-child span {
+    margin-top: 3px;
+}
+.post_likes .replies:last-child,
+.post_likes .replies:last-child i {
     justify-self: end;
+    color: #909399;
+    font-size: 15px;
+}
+.post_likes .replies:hover {
+    opacity: 1;
 }
 .reply_count {
     margin-left: 5px;
     position: relative;
-    top: 3px;
+}
+
+/*****************Comments******************/
+.post_wall_content_comments {
+    border-radius: 0 0 2px 2px;
+}
+.comment_lists {
+    padding-top: 10px;
+    border-top: 1px solid #e7e8ec;
+}
+.comment_wrap {
+    padding: 0 20px;
+    line-height: 14px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+.comment {
+    display: grid;
+    grid-template-columns: 7% 1fr;
+    grid-gap: 10px;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+}
+.comment a:hover {
+    text-decoration: underline;
+}
+.comment_image {
+    justify-self: center;
+}
+.comment_image > img {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.comment_content {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.comment_header {
+    display: grid;
+    grid-template-columns: 1fr 10%;
+    align-items: center;
+}
+.comment_delete {
+    justify-self: center;
+}
+.comment_delete i {
+    color: #8a92a0;
+    font-weight: 200;
+    opacity: 0.5;
+}
+.comment_delete i:hover {
+    opacity: 1;
+}
+.comment_text {
+    padding-top: 4px;
+}
+.comment_footer {
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.comment_reply {
+    margin-left: 10px;
+}
+.comment_like {
+    justify-self: end;
+    color: #8a92a0;
+    opacity: 0.5;
+    margin-right: 12px;
+}
+.comment_like:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.reply_to_comment{
+    margin-top: 5px;
+    margin-left: 64px;
+    margin-right: 20px;
+    border-top: 1px solid #e7e8ec;
+}
+.reply_comment_image img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
