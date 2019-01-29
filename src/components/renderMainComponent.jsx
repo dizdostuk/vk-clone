@@ -6,7 +6,6 @@ class RenderMainComponent extends Component {
   state = {};
 
   render() {
-    
     return (
       <Feed />
     );
