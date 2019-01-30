@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./posts.css";
 import PostNotify from "./postNotify";
-import PostItem from "./postItem";
+import PostItem from "./common/postItem";
 
 class Posts extends Component {
   state = {
