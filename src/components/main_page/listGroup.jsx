@@ -1,8 +1,9 @@
 import React from 'react';
+import FeedListgroup from './common/feedListgroup';
 
 const ListGroup = () => {
   return ( 
-    <h1>Listg</h1>
+    <FeedListgroup />
    );
 }
  

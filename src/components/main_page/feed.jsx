@@ -6,6 +6,7 @@ import SubmitPost from "../common/submitPost";
 import "./feed.css";
 import Stories from "./stories";
 import Posts from "./posts";
+import ListGroup from "./listGroup";
 
 class Feed extends Component {
   state = {
@@ -38,39 +39,43 @@ class Feed extends Component {
     };
     const { postString, postChanged } = this.state;
     return (
-      <div className="wide_column_wrap">
-        <div className="wide_column">
-          <div className="main_feed">
-            <div className="page_block feed_post_wrap">
-              <PostDropbox />
+      <React.Fragment>
+        <div className="wide_column_wrap">
+          <div className="wide_column">
+            <div className="main_feed">
+              <div className="page_block feed_post_wrap">
+                <PostDropbox />
 
-              <Link to="" className="post_field_user_link">
-                <img
-                  src="https://pp.userapi.com/c851216/v851216536/7e424/YEfQL43SS_o.jpg?ava=1"
-                  alt=""
-                  className="post_field_user_image"
+                <Link to="" className="post_field_user_link">
+                  <img
+                    src="https://pp.userapi.com/c851216/v851216536/7e424/YEfQL43SS_o.jpg?ava=1"
+                    alt=""
+                    className="post_field_user_image"
+                  />
+                </Link>
+
+                <PostField
+                  onChange={this.handleChangePost}
+                  postString={postString}
+                  postChanged={postChanged}
+                  style={actionBtnStyle}
                 />
-              </Link>
 
-              <PostField
-                onChange={this.handleChangePost}
-                postString={postString}
-                postChanged={postChanged}
-                style={actionBtnStyle}
+                <SubmitPost />
+              </div>
+
+              <Stories
+                storyBackgroundStyle={storyBackgroundStyle}
+                storyAuthAva={storyAuthAva}
               />
 
-              <SubmitPost />
+              <Posts />
             </div>
-
-            <Stories
-              storyBackgroundStyle={storyBackgroundStyle}
-              storyAuthAva={storyAuthAva}
-            />
-
-            <Posts />
           </div>
         </div>
-      </div>
+
+        <ListGroup />
+      </React.Fragment>
     );
   }
 }

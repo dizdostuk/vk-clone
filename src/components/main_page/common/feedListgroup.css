@@ -1,0 +1,28 @@
+.narrow_column {
+    width: 230px;
+}
+.feed_right_menu {
+    display: grid;
+    grid-template-rows: 10% 1fr 10% 10% 1fr;
+    align-items: center;
+    font-size: 13px;
+}
+.item_active {
+    border-left: 2px solid #5181b8;
+}
+.right_menu_item {
+    padding-left: 13px;
+}
+
+.right_menu_sublist {
+    display: grid;
+    grid-auto-rows: 1fr;
+    align-items: center;
+    font-size: 13px;
+}
+.right_menu_bottom {
+    display: grid;
+    grid-auto-rows: 1fr;
+    align-items: center;
+    font-size: 13px;
+}

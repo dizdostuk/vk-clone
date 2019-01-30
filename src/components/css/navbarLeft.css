@@ -1,7 +1,6 @@
 .side_bar {
   width: 149px;
-  top: 0;
-  position: relative;
+  justify-self: center;
 }
 .side_bar.sticky_top {
   position: sticky;

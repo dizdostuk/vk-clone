@@ -12,8 +12,8 @@ class App extends Component {
     return (
       <React.Fragment>
         <Navbar />
-        <div className="page_wrap" style={{width: "1348px"}}>
-          <div className="page_layout" style={{width: "960px"}}>
+        <div className="page_wrap" style={{width: "100%"}}>
+          <div className="page_layout">
             <NavbarLeft />
             <RenderMainComponent />
           </div>
