@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./feedListgroup.css";
 
-const FeedListgroup = () => {
+const FeedListgroup = ({ feedIsToggleClick, feedToggleNews }) => {
+  let isToggleClick = feedIsToggleClick;
   return (
     <div className="wide_column_right">
       <div className="wide_column">
@@ -24,20 +25,32 @@ const FeedListgroup = () => {
                 Подкасты
               </Link>
             </div>
-            <Link to="" className="right_menu_item">Рекомендации</Link>
-            <Link to="" className="right_menu_item">Поиск</Link>
-            <div className="right_menu_line"></div>
-            <Link to="" className="right_menu_item">Понравилось</Link>
-            <Link to="" className="right_menu_item">Обновления</Link>
-            <Link to="" className="right_menu_item">Комментарии</Link>
-            
+            <Link to="" className="right_menu_item">
+              Рекомендации
+            </Link>
+            <Link to="" className="right_menu_item">
+              Поиск
+            </Link>
+            <div className="right_menu_line" />
+            <Link to="" className="right_menu_item">
+              Понравилось
+            </Link>
+            <Link to="" className="right_menu_item">
+              Обновления
+            </Link>
+            <Link to="" className="right_menu_item">
+              Комментарии
+            </Link>
           </div>
 
           <div className="page_block">
             <div className="toggle_fire">
               <i className="fa fa-fire" />
               <span>Сначала интересные</span>
-              <div className="uitoggle on"></div>
+              <div
+                className={!isToggleClick ? "uitoggle on" : "uitoggle"}
+                onClick={feedToggleNews}
+              />
             </div>
           </div>
         </div>

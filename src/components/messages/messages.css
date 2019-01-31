@@ -1,0 +1,13 @@
+.msg_page {
+    width: 550px;
+}
+
+.msg_dialogs {
+    width: 100%;
+    min-height: 385px;
+}
+
+.search_input {
+    background-image: url(https://vk.com/images/search_icon.png);
+    background-repeat: no-repeat;
+}

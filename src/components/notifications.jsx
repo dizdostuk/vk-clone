@@ -70,7 +70,7 @@ class Notifications extends Component {
                   src="https://pp.userapi.com/c851132/v851132956/7110d/ABADNNilZcY.jpg?ava=1"
                   alt=""
                 />
-                <i class="fa fa-gift" />
+                <i className="fa fa-gift" />
               </Link>
               <div className="nav-notify_event_description">
                 <div className="nav-notify_event_description_header">
@@ -101,7 +101,7 @@ class Notifications extends Component {
                   src="https://pp.userapi.com/c831508/v831508413/1ddafc/HfhjTupiXIY.jpg?ava=1"
                   alt=""
                 />
-                <i class="fa fa-comment" />
+                <i className="fa fa-comment" />
               </Link>
               <div className="nav-notify_event_description">
                 <div className="nav-notify_event_description_header">

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./postItem.css";
 
 class PostItem extends Component {
-  state = {};
+  
   render() {
     return (
       <div className="item_post">
@@ -116,7 +116,7 @@ class PostItem extends Component {
                     <span className="reply_count">1</span>
                   </div>
                   <div className="replies">
-                    <i className="fa fa-comments" />{" "}
+                    <i className="fa fa-comments" />
                     <span className="reply_count">1</span>
                   </div>
                   <div className="replies">
