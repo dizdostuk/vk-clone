@@ -47,6 +47,10 @@
     grid-template-columns: 10% 1fr;
     align-items: center;
     padding-left: 15px;
+    cursor: pointer;
+}
+.message_item:hover {
+    background-color: aquamarine;
 }
 .message_item > a {
     padding: 9px 7px 8px 0;
@@ -57,17 +61,29 @@
 .message_info {
     display: grid;
     grid-template-columns: 1fr 10%;
+    padding-right: 15px;
 }
 .message_content {
     border-top: 1px solid #e3e4e8;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 25px 25px;
+    padding: 10px 0;
+    margin-left: 5px;
 }
 .message_content .who_messaged {
     font-weight: 500;
+    font-size: 13.5px;
 }
 .message_content > .text_message {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    font-size: 13px;
+}
+.message_time {
+    justify-self: center;
+    align-self: start;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #a1a6af;
 }
