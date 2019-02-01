@@ -1,0 +1,13 @@
+.msg_right_menu {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 13px;
+    line-height: 13px;
+    padding: 5px 0;
+}
+.msg_item {
+    padding: 10px 0 10px 15px;
+}
+.msg_item:hover {
+    background-color: #f0f2f5;
+}
