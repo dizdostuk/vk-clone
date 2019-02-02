@@ -6,7 +6,7 @@ import LeftBottomMenu from './common/leftBottomMenu';
 
 const NavbarLeft = () => {
   return (
-    <div id="side_bar" className="side_bar sticky_top">
+    <div id="side_bar" className={ window.location.pathname === "/messages" ? "page_messages side_bar sticky_top" : "side_bar sticky_top"}>
       <div className="side_bar_inner">
         <nav>
           <ol>

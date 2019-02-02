@@ -77,6 +77,8 @@ const Messages = () => {
                     <div className="message_time">10:25</div>
                   </div>
                 </div>
+
+                
               </div>
 
               <div className="msg_dialogs_footer page_block">
