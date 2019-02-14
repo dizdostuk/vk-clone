@@ -3,7 +3,24 @@ import { Link } from "react-router-dom";
 import "./postItem.css";
 
 class PostItem extends Component {
-  
+  state = {
+    likeCount: 0,
+    isUserLiked: false,
+    postMenuClicked: false
+  };
+
+  handleLike = () => {
+    if(this.state.isUserLiked === false) {
+      this.setState({
+        likeCount: this.state.likeCount + 1,
+        isUserLiked: !this.state.isUserLiked
+      });
+    }
+  };
+  showPostMenu = () => {
+    this.setState({ postMenuClicked: !this.state.postMenuClicked });
+  };
+
   render() {
     return (
       <div className="item_post">
@@ -34,8 +51,14 @@ class PostItem extends Component {
               </div>
             </div>
             <div className="post_actions_menu">
-              <i className="fa fa-caret-down" />
-              <div className="post_action_menu_wrap">
+              <i className="fa fa-caret-down" onClick={this.showPostMenu} />
+              <div
+                className={
+                  this.state.postMenuClicked
+                    ? "post_action_menu_wrap visibleOn"
+                    : "post_action_menu_wrap"
+                }
+              >
                 <i className="fa fa-caret-up" />
                 <div className="post_action_menu">
                   <Link to="" className="post_action_link">
@@ -112,8 +135,8 @@ class PostItem extends Component {
               <div className="post_wall_content_likes">
                 <div className="post_likes">
                   <div className="replies">
-                    <i className="fa fa-heart" />
-                    <span className="reply_count">1</span>
+                    <i className={this.state.isUserLiked ? "fa fa-heart colorRed" : "fa fa-heart"} onClick={this.handleLike} />
+                    <span className="reply_count">{this.state.likeCount}</span>
                   </div>
                   <div className="replies">
                     <i className="fa fa-comments" />

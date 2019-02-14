@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import PostDropbox from "../common/postDropbox";
-import PostField from "../common/postField";
-import SubmitPost from "../common/submitPost";
+import PostDropbox from "./common/postDropbox";
+import PostField from "./common/postField";
+import SubmitPost from "./common/submitPost";
 import "./feed.css";
 import Stories from "./stories";
 import Posts from "./posts";
@@ -17,8 +17,8 @@ class Feed extends Component {
 
   handleChangePost = e => {
     if (this.state.postString === "") this.setState({ postChanged: false });
-    else this.setState({ postChanged: true });
-
+    
+    this.setState({ postChanged: true });
     this.setState({ postString: e.target.value });
   };
 

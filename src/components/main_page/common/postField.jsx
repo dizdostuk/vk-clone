@@ -1,8 +1,8 @@
 import React from "react";
-import "./css/postField.css";
+import "./postField.css";
 
 const PostField = (props) => {
-    const { postString, onChange, style } = props;
+    const { postString, onChange, postChanged, style } = props;
   return (
     <div className="post_field_wrap">
       <div
@@ -14,7 +14,7 @@ const PostField = (props) => {
       />
       <div
         className={
-          postString === ""
+          postChanged === false
             ? "placeholder dp_block"
             : "placeholder dp_none"
         }

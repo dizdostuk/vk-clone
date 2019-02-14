@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/postDropbox.css";
+import "./postDropbox.css";
 
 const PostDropbox = () => {
   return (

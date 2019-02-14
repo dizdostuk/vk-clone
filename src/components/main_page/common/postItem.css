@@ -1,3 +1,10 @@
+.visibleOn {
+    visibility: visible;
+}
+.colorRed {
+    color: #f23334 !important;
+    opacity: 1 !important;
+}
 .post_header {
     display: grid;
     grid-template-columns: 10% 1fr 10%;
@@ -53,8 +60,8 @@
     color: #939393;
     cursor: pointer;
 }
-.post_actions_menu > i:hover > .post_action_menu_wrap{
-    opacity: 1;
+.post_actions_menu i:hover > .post_action_menu_wrap{
+    visibility: visible;
 }
 .post_action_menu_wrap {
     position: absolute;
@@ -66,7 +73,7 @@
     max-width: 250px;
     background: #fff;
     padding: 4px 0;
-    opacity: 0;
+    visibility: hidden;
     filter: alpha(opacity=0);
     -o-transition: opacity 100ms linear, top 100ms linear, bottom 100ms linear, visibility 100ms linear;
     transition: opacity 100ms linear, top 100ms linear, bottom 100ms linear, visibility 100ms linear;
@@ -83,7 +90,7 @@
     display: grid;
     grid-template-rows: repeat(4, 1fr);
 }
-.post_action_link {
+.post_action_menu .post_action_link {
     font-size: 13px;
     color: #2a5885;
     outline: none;
@@ -93,6 +100,7 @@
 .post_action_link:hover {
     text-decoration: none;
     background-color: #e4eaf0;
+    cursor: pointer;
 }
 
 .post_wall_content {
@@ -143,11 +151,11 @@
     cursor: pointer;
     display: flex;
     flex-flow: row;
-    opacity: 0.5;
 }
 .post_likes .replies > i,
 .post_likes .replies > span {
     color: #8a92a0;
+    opacity: 0.5;
 }
 .post_likes .replies:first-child {
     margin-top: -6px;
