@@ -10,30 +10,15 @@ import FeedListgroup from "./common/feedListgroup";
 
 class Feed extends Component {
   state = {
-    postString: "",
-    postChanged: false,
     feedIsToggleClick: false
-  };
-
-  handleChangePost = e => {
-    if (this.state.postString === "") this.setState({ postChanged: false });
-    
-    this.setState({ postChanged: true });
-    this.setState({ postString: e.target.value });
   };
 
   feedToggleNews = () => {
     this.setState({ feedIsToggleClick: !this.state.feedIsToggleClick });
   };
+
   render() {
-    const actionBtnStyle = {
-      position: "relative",
-      marginLeft: "-28px",
-      marginRight: "20px",
-      borderTop: "1px solid #e7e8ec",
-      borderBottom: "1px solid rgb(231, 232, 236)",
-      fontSize: "13px"
-    };
+    
     const storyBackgroundStyle = {
       backgroundImage:
         "url(https://sun1-15.userapi.com/c851024/v851024449/97d14/dwIwPbWx2S8.jpg)"
@@ -42,8 +27,6 @@ class Feed extends Component {
       backgroundImage:
         "url(https://sun1-15.userapi.com/c849124/v849124515/10700d/_y8-D2hgSB4.jpg?ava=1)"
     };
-    const { postString, postChanged } = this.state;
-    console.log(this.props);
     return (
       <React.Fragment>
         <div className="wide_column_wrap">
@@ -60,12 +43,7 @@ class Feed extends Component {
                   />
                 </Link>
 
-                <PostField
-                  onChange={this.handleChangePost}
-                  postString={postString}
-                  postChanged={postChanged}
-                  style={actionBtnStyle}
-                />
+                <PostField/>
 
                 <SubmitPost />
               </div>

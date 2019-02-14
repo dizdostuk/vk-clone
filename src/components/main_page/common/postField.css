@@ -2,9 +2,11 @@
   position: relative;
   margin-left: 48px;
 }
-div.submit_post_field[contenteditable="true"] {
-  font-size: 23px;
+.submit_post_field {
+  font-size: 23px !important;
+  border: none !important;
 }
+.submit_post_field,
 .zoom_text_active
   .shown
   div.submit_post_field[contenteditable="true"]
@@ -27,6 +29,7 @@ div.submit_post_field[contenteditable="true"] {
   /*
     */
 }
+.submit_post_field,
 .zoom_text_active
   .shown
   div.submit_post_field[contenteditable="true"]
@@ -55,6 +58,7 @@ div.submit_post_field[contenteditable="true"] {
   font-size: 23px;
   line-height: 1.4;
 }
+.submit_post_field,
 .submit_post_box.shown div.submit_post_field,
 .submit_post_box.shown div.submit_post_field ~ .placeholder .ph_input,
 .submit_post_box.test_posting_experiment_c div.submit_post_field,
@@ -65,11 +69,13 @@ div.submit_post_field[contenteditable="true"] {
   min-width: 80px;
   max-height: 80px;
 }
+.submit_post_field,
 .submit_post_box.own_field div.submit_post_field,
 .submit_post_box.shown div.submit_post_field,
 .submit_post_box.test_posting_experiment_c div.submit_post_field {
   padding-right: 36px;
 }
+.submit_post_field,
 div.submit_post_field,
 div.submit_post_field[contenteditable="true"],
 div.submit_post_field[contenteditable="true"] ~ .placeholder .ph_input,
@@ -93,11 +99,13 @@ div[contenteditable="true"] ~ .placeholder .ph_input,
 input.dark,
 input.dark ~ .placeholder .ph_input,
 textarea.dark,
-textarea.dark ~ .placeholder .ph_input {
+textarea.dark ~ .placeholder .ph_input,
+.submit_post_field {
   padding: 5px 9px 7px;
   border-radius: 2px;
   box-sizing: border-box;
 }
+.submit_post_field,
 .fakeinput,
 .fakeinput ~ .placeholder .ph_input,
 div[contenteditable="true"],
@@ -117,6 +125,7 @@ textarea ~ .placeholder .ph_input {
   margin: 0;
   border: 1px solid #d3d9de;
 }
+.submit_post_field,
 .fakeinput,
 div[contenteditable="true"],
 input.big_text,
