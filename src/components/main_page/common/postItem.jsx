@@ -1,16 +1,26 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./postItem.css";
+import Comments from "./comments";
 
 class PostItem extends Component {
   state = {
+    userImage:
+      "https://pp.userapi.com/c851216/v851216536/7e424/YEfQL43SS_o.jpg?ava=1",
     likeCount: 0,
     isUserLiked: false,
-    postMenuClicked: false
+    postMenuClicked: false,
+    commentChange: "",
+    commentPostArr: [
+      {
+        userImg: "",
+        commentText: ""
+      }
+    ]
   };
 
   handleLike = () => {
-    if(this.state.isUserLiked === false) {
+    if (this.state.isUserLiked === false) {
       this.setState({
         likeCount: this.state.likeCount + 1,
         isUserLiked: !this.state.isUserLiked
@@ -21,7 +31,20 @@ class PostItem extends Component {
     this.setState({ postMenuClicked: !this.state.postMenuClicked });
   };
 
+  handleChangeComment = e => {
+    this.setState({ commentChange: e.target.value });
+  };
+
+  commentPost = () => {
+    let comArr = {
+      userImg: this.state.userImage,
+      commentText: this.state.commentChange
+    };
+    this.setState({ commentPostArr: this.state.commentPostArr.push(comArr) });
+  };
+
   render() {
+    const { userImage, commentPostArr } = this.state;
     return (
       <div className="item_post">
         <div className="post page_block">
@@ -135,7 +158,14 @@ class PostItem extends Component {
               <div className="post_wall_content_likes">
                 <div className="post_likes">
                   <div className="replies">
-                    <i className={this.state.isUserLiked ? "fa fa-heart colorRed" : "fa fa-heart"} onClick={this.handleLike} />
+                    <i
+                      className={
+                        this.state.isUserLiked
+                          ? "fa fa-heart colorRed"
+                          : "fa fa-heart"
+                      }
+                      onClick={this.handleLike}
+                    />
                     <span className="reply_count">{this.state.likeCount}</span>
                   </div>
                   <div className="replies">
@@ -153,103 +183,12 @@ class PostItem extends Component {
                 </div>
               </div>
 
-              <div className="post_wall_content_comments">
-                <div className="comment_lists">
-                  <div className="comment_wrap">
-                    <div className="comment">
-                      <Link to="" className="comment_image">
-                        <img
-                          src="https://sun1-10.userapi.com/c848628/v848628635/124b49/necA7LsWSKM.jpg?ava=1"
-                          alt="Avatar"
-                        />
-                      </Link>
-                      <div className="comment_content">
-                        <div className="comment_header">
-                          <div className="comment_author">
-                            <Link to="">Владислав Ламборгини</Link>
-                          </div>
-                          <div className="comment_delete">
-                            <i className="fa fa-times" />
-                          </div>
-                        </div>
-                        <div className="comment_text">
-                          <div className="text">3000, не?</div>
-                        </div>
-                        <div className="comment_footer">
-                          <Link to="" className="comment_time">
-                            31 минуту назад
-                          </Link>
-                          <Link to="" className="comment_reply">
-                            Ответить
-                          </Link>
-                          <div className="comment_like">
-                            <i className="fa fa-heart" />
-                            <span className="reply_count">1</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="reply_to_comment_wrap">
-                    <div className="reply_to_comment">
-                      <div className="comment">
-                        <Link to="" className="reply_comment_image">
-                          <img
-                            src="https://sun1-10.userapi.com/c848628/v848628635/124b49/necA7LsWSKM.jpg?ava=1"
-                            alt="Avatar"
-                          />
-                        </Link>
-                        <div className="comment_content">
-                          <div className="comment_header">
-                            <div className="comment_author">
-                              <Link to="">Владислав Ламборгини</Link>
-                            </div>
-                            <div className="comment_delete">
-                              <i className="fa fa-times" />
-                            </div>
-                          </div>
-                          <div className="comment_text">
-                            <div className="text">3000, не?</div>
-                          </div>
-                          <div className="comment_footer">
-                            <Link to="" className="comment_time">
-                              31 минуту назад
-                            </Link>
-                            <Link to="" className="comment_reply">
-                              Ответить
-                            </Link>
-                            <div className="comment_like">
-                              <i className="fa fa-heart" />
-                              <span className="reply_count">1</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="comment_box">
-                  <Link className="comment_avatar" to="">
-                    <img
-                      src="https://pp.userapi.com/c851216/v851216536/7e424/YEfQL43SS_o.jpg?ava=1"
-                      alt=""
-                    />
-                  </Link>
-                  <div className="comment_input">
-                    <div
-                      className="editable_input"
-                      placeholder="Написать комментарий"
-                      contentEditable="true"
-                    />
-                    <i className="fa fa-paperclip" />
-                    <i className="fa fa-camera" />
-                    <i className="fa fa-smile"></i>
-                  </div>
-                  <div className="comment_enter">
-                    <i className="fa fa-arrow-circle-right" />
-                  </div>
-                </div>
-              </div>
+              <Comments
+                currentUserImg={userImage}
+                handleChangeComment={this.handleChangeComment}
+                onClick={this.commentPost}
+                commentPostArr={commentPostArr}
+              />
             </div>
           </div>
         </div>

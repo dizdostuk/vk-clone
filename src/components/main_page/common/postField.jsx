@@ -24,19 +24,19 @@ class PostField extends Component {
       fontSize: "13px"
     };
 
-    const { postString, postChanged } = this.state;
+    const { postString } = this.state;
     return (
       <div className="post_field_wrap">
-        <input
-          type="text"
+        <div
           className="submit_post_field"
-          role="textbox"
           onChange={this.handleChangePost}
           value={postString}
+          contentEditable="true"
+          input="value=$element.innerHTML"
         />
         <div
           className={
-            postChanged === true
+            postString !== ""
               ? "placeholder dp_none"
               : "placeholder dp_block"
           }

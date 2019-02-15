@@ -292,6 +292,7 @@
     border: none;
     padding: 7px 90px 7px 13px;
     height: auto;
+    outline: none;
 }
 .comment_input i {
     font-size: 18px;
