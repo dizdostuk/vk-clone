@@ -7,16 +7,16 @@ class PostItem extends Component {
   state = {
     userImage:
       "https://pp.userapi.com/c851216/v851216536/7e424/YEfQL43SS_o.jpg?ava=1",
+    userName: "Ulanbek Zhusupov",
     likeCount: 0,
     isUserLiked: false,
     postMenuClicked: false,
     commentChange: "",
-    commentPostArr: [
-      {
-        userImg: "",
-        commentText: ""
-      }
-    ]
+    haveComments: false,
+    haveReply: false,
+    wantToReply: false,
+    commentPostArr: [],
+    replyToCommentArr: []
   };
 
   handleLike = () => {
@@ -36,15 +36,48 @@ class PostItem extends Component {
   };
 
   commentPost = () => {
-    let comArr = {
+    let commentArr = [...this.state.commentPostArr];
+    let commentObj = {
       userImg: this.state.userImage,
-      commentText: this.state.commentChange
+      userName: this.state.userName,
+      commentText: this.state.commentChange,
+      commentTime: new Date().getMinutes(),
+      replyForComment: []
     };
-    this.setState({ commentPostArr: this.state.commentPostArr.push(comArr) });
+    commentArr.push(commentObj);
+    this.setState({ commentChange: "", commentPostArr: commentArr, haveComments: true });
   };
 
+  handleReply = () => {
+    let doIwantReply = true;
+    this.setState( state => ({ state, wantToReply: doIwantReply }));
+  }
+
+  replyComment = () => {
+    let replyCommentArr = [...this.state.commentPostArr];
+    let replyObj = {
+      replierImg: this.state.userImage,
+      replierName: this.state.userName,
+      replierText: this.state.commentChange,
+      replyTo: replyCommentArr.userName,
+      commentTime: new Date().getMinutes()
+    };
+    replyCommentArr.push(replyObj);
+
+    this.setState({ commentChange: "", replyToCommentArr: replyCommentArr, haveReply: true });
+  }
+
   render() {
-    const { userImage, commentPostArr } = this.state;
+    const {
+      userImage,
+      haveComments,
+      wantToReply,
+      haveReply,
+      commentPostArr,
+      replyToCommentArr,
+      commentChange
+    } = this.state;
+    
     return (
       <div className="item_post">
         <div className="post page_block">
@@ -184,10 +217,16 @@ class PostItem extends Component {
               </div>
 
               <Comments
+                inptValue={commentChange}
                 currentUserImg={userImage}
                 handleChangeComment={this.handleChangeComment}
-                onClick={this.commentPost}
+                haveComments={haveComments}
+                wantToReply={wantToReply}
+                haveReply={haveReply}
+                handleReply={this.handleReply}
+                postComment={this.commentPost}
                 commentPostArr={commentPostArr}
+                replyToCommentArr={replyToCommentArr}
               />
             </div>
           </div>
